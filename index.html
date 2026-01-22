@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharvani Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf1b5cdb56.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Sharvani</span><br>Rathore From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a detail-oriented B.Tech student specializing in Cyber Security at LNCTS with an 8.51 CGPA.
+                        As a tech enthusiast and branch rank holder, I bridge the gap between creative Web Development
+                        and robust software solutions using HTML, CSS, JavaScript, and Java. From presenting research on
+                        YOLOv8 and Computer Vision to completing a Salesforce Developer internship, I am dedicated to
+                        continuous learning and transforming innovative ideas into secure, practical solutions.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Cyber Security & UI/UX</span><br>Focusing on secure web interfaces and
+                                user-centric design</li>
+                            <li><span>Web Deceloper</span><br>Building responsive sites using HTML, CSS, and JavaScript.
+                            </li>
+                            <li><span>Java Developer</span><br>Developing functional systems like Bank Management
+                                platforms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2025 - July 2025</span><br>Salesforce Developer Intern at SmartBridge (AICTE
+                                Salesforce Program)</li>
+                            <li><span>Dec 2024</span><br>Research Paper Presenter at ICEHAIDS-2024 - Real-Time Product
+                                Detection using YOLOv8</li>
+                            <li><span>Java Developer</span><br>Java Developer Project - Bank Management System Design
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2026</span><br>B.Tech in CS (Cyber Security) at LNCT&S, Bhopal - 8.51 CGPA
+                            </li>
+                            <li><span>2022</span><br>Class XII (CBSE) at St. Raphael Co-Ed School, Bhopal</li>
+                            <li><span>2020</span><br>Class X (CBSE) at St. Raphael Co-Ed School, Bhopal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---services-->
+    <div id="services">
+    <div class="container">
+        <h1 class="sub-title" style="text-align: center; margin-bottom: 40px;">Services</h1>
+        <div class="skills-card">
+            <div class="skills-icons">
+                <i class="fa-brands fa-react" title="React"></i>
+                <i class="fa-solid fa-database" title="MySQL"></i>
+                <i class="fa-brands fa-git-alt" title="Git"></i>
+                <i class="fa-brands fa-html5" title="HTML"></i>
+                <i class="fa-brands fa-css" title="CSS"></i>
+                <i class="fa-brands fa-js" title="JavaScript"></i>
+                <i class="fa-brands fa-java" title="Java"></i>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <!---portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Bank Management System</h3>
+                        <p>Developed a secure platform in Java to automate account operations and transaction
+                            processing.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="">
+                    <div class="layer">
+                        <h3>AI Image Generator</h3>
+                        <p>Built a full-stack generative AI platform using the MERN stack to process and display custom
+                            imagery securely.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Created a responsive real-time tracker using JavaScript and API integration for dynamic
+                            weather updates.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+<!---contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sharvanirathore2004@gmail.com</p>
+                    <p><i class="fa-duotone fa-solid fa-phone"></i>+91-9131571191</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sharvanirathore/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Sharvani24"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+     
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
